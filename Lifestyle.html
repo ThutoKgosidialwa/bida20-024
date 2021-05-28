@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manchester</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="lifestyle.css">
+</head>
+
+
+<body style="background-color: rgb(182, 183, 199);">
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <label class="logo">MANCHESTER</label>
+    <ul>
+      <li><a href="Index.html">Home</a></li>
+      <li><a href="About.html">About</a></li>
+      <li><a href="Lifestyle.html">Lifestyle</a></li>
+      <li><a class="active" href="Events.html">Events</a></li>
+      <li><a href="Connect With Us.html">Connect With Us</a></li>
+    </ul>
+  </nav>
+  <br>
+
+  <h1 style="text-align: center; color: rgba(7, 6, 10, 0.164);">The Lifestyle in Manchester</h1>
+
+  <body-1>
+    <div>
+      <div class="content">
+        <div class="images">
+          <img src="Images/awesome-suspension-bridge-in-manchester-engl-1080P-wallpaper-middle-size.jpg">
+          <img src="Images/construx-ltd-about-banner-media-city-manchester.jpg">
+          <img src="Images/ManLogo.jpg">
+          <img src="Images/Welcome to the city of Man.jpg">
+          <img src="Images/manchester ancient.jpg">
+        </div>
+        <div class="btm-slides">
+          <span onclick="btm_slide(1)"></span>
+          <span onclick="btm_slide(2)"></span>
+          <span onclick="btm_slide(3)"></span>
+          <span onclick="btm_slide(4)"></span>
+          <span onclick="btm_slide(5)"></span>
+        </div>
+        <div class="sliders left" onclick="side_slide(-1)">
+          <span class="fas fa-angle-left"></span>
+        </div>
+        <div class="sliders right" onclick="side_slide(1)">
+          <span class="fas fa-angle-right"></span>
+        </div>
+      </div>
+      <script>
+        var indexValue = 1;
+        showImg(indexValue);
+        function btm_slide(e) { showImg(indexValue = e); }
+        function side_slide(e) { showImg(indexValue += e); }
+        function showImg(e) {
+          var i;
+          const img = document.querySelectorAll('img');
+          const slider = document.querySelectorAll('.btm-slides span');
+          if (e > img.length) { indexValue = 1 }
+          if (e < 1) { indexValue = img.length }
+          for (i = 0; i < img.length; i++) {
+            img[i].style.display = "none";
+          }
+          for (i = 0; i < slider.length; i++) {
+            slider[i].style.background = "rgba(255,255,255,0.1)";
+          }
+          img[indexValue - 1].style.display = "block";
+          slider[indexValue - 1].style.background = "white";
+        }
+      </script>
+    </div>
+  </body-1>
+
+  <div class="lifestyle">
+    <h2>Football</h2>
+    <p>
+      Manchester is home to two of the biggest names in sport: Manchester United and Manchester City football clubs.
+
+      Manchester United's ground, Old Trafford, is the largest club ground in Britain. While Manchester City are based
+      on
+      the other side of the city at the Etihad Stadium, originally built for the 2002 Commonwealth Games.
+
+      National and international cricket can be enjoyed at Lancashire's Old Trafford Ground, and rugby union and rugby
+      league teams play at nearby Sale, Salford, Wigan and Warrington.
+
+      Other state-of-the-art facilities open to the public include:
+
+      Chill Factore indoor skiing and snowboarding slope
+      City of Manchester Stadium
+      Manchester Aquatics Centre
+      Manchester BMX Track
+      Manchester Climbing Centre
+      Manchester Regional Gymnastics Centre
+      National Squash Centre
+      Regional Athletics Centre
+      Regional Tennis Centre
+      The National Cycling Centre (Manchester Velodrome)
+      The Salford Quays Watersports Centre
+      <br>
+      <br>
+
+    <h2>Shopping In Manchester</h2>
+
+    Manchester is known as the 'shopping capital of the North'. You'll find everything from department stores and high
+    street chains, to vintage fairs and designer boutiques.
+
+    The trendy Northern Quarter is the creative hub of Manchester's shopping scene and offers a unique experience with
+    its
+    mix of bars, cafés and eclectic one-off shops.
+
+    If you prefer having all the best shops in one place, the out-of-town Trafford Centre is for you. More than 35
+    million
+    visitors come to enjoy 250 stores and 35 restaurants each year.
+
+    There's also a number of additional shopping centres located more centrally, including the Manchester Arndale and
+    the
+    Triangle Shopping Centre - an impressive boutique-style mall, located within the city's former corn exchange.
+    </p>
+  </div>
+</body>
+
+</html>
