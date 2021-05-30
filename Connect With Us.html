@@ -1,28 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manchester</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-    
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manchester</title>
+  <link rel="stylesheet" href="style.css">
+
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <label class="logo">MANCHESTER</label>
+    <ul>
+      <li><a href="Index.html">Home</a></li>
+      <li><a href="About.html">About</a></li>
+      <li><a href="Lifestyle.html">Lifestyle</a></li>
+      <li><a href="Events.html">Events</a></li>
+      <li><a class="active" href="Connect With Us.html">Connect With Us</a></li>
+    </ul>
+  </nav>
 </head>
-<body>
-    <nav>
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-          <i class="fas fa-bars"></i>
-        </label>
-        <label class="logo">MANCHESTER</label>
-        <ul>
-          <li><a href="Index.html">Home</a></li>
-          <li><a href="About.html">About</a></li>
-          <li><a href="Lifestyle.html">Lifestyle</a></li>
-          <li><a href="Events.html">Events</a></li>
-          <li><a class="active" href="Connect With Us.html">Connect With Us</a></li>
-        </ul>
-      </nav>
+
+<body
+  style="background-image: url(https://www.construx.ltd/wp-content/uploads/2019/05/construx-ltd-about-banner-media-city-manchester.jpg);">
+
+  <div class="connect">
+    <form action="thankyou.html" method="POST" target="_blank">
+      <h1>Get in Contact With Us</h1>
+      <p>Subscribe for a weekly news letter by entering your email below</p>
+      <div>
+        <label for="email">Enter Your Email:</label>
+        <input placeholder="Email">
+      </div>
+      <button style="padding: 5px;">Submit</button>
+    </form>
+  </div>
+  <style>
+    .connect {
+    padding-left: 35%;
+    padding-top: 100px;
+  }
+
+  .connect .h1 {
+    font-family: 'roboto', sans-serif;
+    margin-bottom: 100px;
+    font-size: 17px;
+  }
+
+  .connect .p {
+    font-family: 'roboto', sans-serif;
+  }
+  </style>
+
+
+  </form>
+  </div>
+
+  <div class="footer">
+    <div class="footer-content">
+      <div class="footer-section about">
+        <h2>About</h2>
+        <p>
+          This website was fully provided developed with passion and love
+        </p>
+      </div>
+      <div class="footer-section links">
+        <a href="Index.html"></a>
+        <a href="About.html"></a>
+        <a href="Lifestyle.html"></a>
+        <a href="Events.html"></a>
+        <a href="Connect With Us.html"></a>
+      </div>
+      <div class="footer-section contact-form">
+        <h3>Email</h3>
+        <p>thutokgosidialwa@gmail.com</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      &copy; Developed by Thuto Kgosidialwa
+    </div>
+  </div>
+
 </body>
+
 </html>

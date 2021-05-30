@@ -96,3 +96,9 @@
     background-size: cover;
     height: calc(100vh - 80px);
   }
+  .welcome {
+    text-align: center;
+    font-size: 50px;
+    color: rgb(98, 138, 165);
+    padding-top: 85px;
+  }

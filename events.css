@@ -1,0 +1,136 @@
+.fmcontainer{
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.fmcard{
+  display: grid;
+  grid-template-columns: 300px;
+  grid-template-rows: 180px 180px 80px;
+  grid-template-areas: "image" "text" "stats";
+  font-family: 'franklin Gothic';
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.8);
+  text-align: center;
+  margin: 15px;
+  transition: 0.5s ease;
+}
+.img-card11{
+  grid-area: image;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background: url(images/lion-king-leaping-kicks-by-johan-persson2.jpg);
+  background-size: cover;
+}
+.img-card2{
+  grid-area: image;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background: url(images/harry-potter-statue-640-360.jpg);
+  background-size: cover;
+}
+.frstmain-header h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.frstmain-header h1{
+  text-align: center;
+  color: black;
+}
+.scndmain-header h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.scndmain-header h1{
+  text-align: center;
+  color: black;
+}
+.img-card3{
+  grid-area: image;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background: url(images/joseph-and-the-amazing-technicolor-1920x1080.jpg);
+  background-size: cover;
+}
+.img-card4{
+  grid-area: image;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background: url(images/julietmiriamteakleejulietanensemble1920x1080.jpg);
+  background-size: cover;
+}
+.img-card5{
+  grid-area: image;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background: url(images/2layton-williams-jamie-and-the-ensemble-in-everybodys-talking-about-jamie-at-the-apollo-theatre.jpg);
+  background-size: cover;
+}
+.img-card666{
+  grid-area: image;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background: url(images/get-up-stand-up-the-bob-marley-musical-lyric-theatre-london.jpg);
+  background-size: cover;
+}
+
+.text-card{
+  grid-area: text;
+  margin: 30px;
+}
+.text-card h4{
+  font-family: 'Impact';
+  color: skyblue;
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.text-card p{
+  color: black;
+  font-size: 15px;
+}
+.stats-card{
+  display: grid;
+  grid-area: stats;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: skyblue;
+  overflow: hidden;
+}
+.stats-card .social{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  color: white;
+}
+.stats-card .social i{
+  font-size: 22px;
+}
+.stats-card .border{
+  border-left: 1px solid rgb(232, 248, 255);
+  border-right: 1px solid rgb(232, 248, 255);
+}
+.stats-card .social .i:hover {
+  transform: scale(2.0);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px){
+  .fmcontainer{
+    flex-direction: column;
+  }
+}
